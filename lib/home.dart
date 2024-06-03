@@ -1,3 +1,4 @@
+import 'package:dice/roll_dice.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -7,30 +8,17 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color.fromRGBO(0, 50, 89, 1.0),
-              Color.fromRGBO(0, 62, 110, 1.0),
+              Color.fromRGBO(1, 88, 157, 1.0),
+              Color.fromRGBO(0, 30, 54, 1.0),
             ],
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
           ),
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Image.asset('assets/images/dice1.png'),
-            TextButton(
-              onPressed: () {},
-              child: Text(
-                'Tap to Change',
-                style: TextStyle(fontSize: 20, color: Colors.white),
-              ),
-            ),
-          ],
-        ),
+        child: const RollDice(),
       ),
     );
   }
