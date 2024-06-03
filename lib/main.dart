@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Color.fromARGB(33, 150, 243, 0),
+          seedColor: Color.fromRGBO(33, 150, 243, 1),
         ),
         useMaterial3: true,
       ),
